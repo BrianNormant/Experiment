@@ -1,44 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <expand />
+    <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7160dc86-bb95-4151-90fb-3bf3ef863de3" name="Default Changelist" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/TrashTest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HammingCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interpreter/Interpreter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/math/CustomMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/math/Point2i.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sudoku/Ex1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sudoku/Sudoku.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TrashTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TrashTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CustomMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HammingCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HammingCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +50,21 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="TrashTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -163,6 +150,46 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="801" y="376" key="#Notifications/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1607724218923" />
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1611685459380">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1611685459380" />
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1611683239986">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1611683239986" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1611683239986">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1611683239986" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1611683239986">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1611683239986" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1611683239986">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1611683239986" />
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1611681432208">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1611681432208" />
+    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1611681432208">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1611681432208" />
+    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1611681432208">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1611681432208" />
+    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1611681432208">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1611681432208" />
+    <state x="277" y="77" key="SettingsEditor" timestamp="1611686406530">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="277" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1611686406530" />
     <state x="452" y="208" key="Vcs.Push.Dialog.v2" timestamp="1607724694228">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -187,5 +214,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="714" y="426" key="git4idea.remote.GitConfigureRemotesDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1607724161989" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1611753827300">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1611753827300" />
   </component>
 </project>
