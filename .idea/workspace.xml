@@ -6,11 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7160dc86-bb95-4151-90fb-3bf3ef863de3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/math/Grapher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/math/IFunction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/CustomMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/CustomMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/math/Point2i.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611755107886</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ajout d'un dessinateur de fonction et de deux methode de sommation de Riemann">
+      <created>1614312819555</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614312819555</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,7 +155,9 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="First Commit" />
     <MESSAGE value="Ajout d'une description et d'autre methodes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'une description et d'autre methodes" />
+    <MESSAGE value="Ajout d'un dessinateur de fonction et de deux methode de sommation de Riemann" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'un dessinateur de fonction et de deux methode de sommation de Riemann" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="801" y="376" key="#Notifications" timestamp="1607724218923">
@@ -163,10 +168,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1611685459380" />
-    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1611755106393">
+    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1614312816802">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1611755106393" />
+    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1614312816802" />
     <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1611755174300">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -203,11 +208,11 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1611686406530" />
-    <state x="362" y="166" key="Vcs.Push.Dialog.v2" timestamp="1611755121524">
+    <state x="362" y="166" key="Vcs.Push.Dialog.v2" timestamp="1614312822720">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="452" y="208" key="Vcs.Push.Dialog.v2/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1607724694228" />
-    <state x="362" y="166" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1611755121524" />
+    <state x="362" y="166" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1614312822720" />
     <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1607863956915">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
