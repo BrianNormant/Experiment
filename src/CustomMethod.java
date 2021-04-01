@@ -262,9 +262,15 @@ public class CustomMethod {
         boolean[] wasUpperCase = new boolean[original.length()];
         for (int i = 0; i < original.length(); i++) if (Character.isUpperCase(original.charAt(i))) wasUpperCase[i] = true;
         original = original.toLowerCase();
-        for (char c : original.toCharArray()) for (int i = 0; i < alphabetChar.length; i++) {
-            if (c == alphabetChar[i]) script.append(Character.toChars((i + offset) % 26 + 97)[0]);
-            if (c == alphabetChar[i]) System.out.println((i+offset)%26+97);
+        for (char c : original.toCharArray()) {
+            boolean found = false;
+            for (int i = 0; i < alphabetChar.length; i++) {
+                if (c == alphabetChar[i]) {
+                    script.append(Character.toChars((i + offset) % 26 + 97)[0]);
+                    found = true;
+                }
+            }
+            if (!found) script.append(c);
         }
         for (int i = 0; i < original.length(); i++) if (wasUpperCase[i]) {
             script.insert(i,(String.valueOf(script.charAt(i)).toUpperCase()));

@@ -19,18 +19,16 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7160dc86-bb95-4151-90fb-3bf3ef863de3" name="Default Changelist" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/src/test/AnonymousClasses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
+    <list default="true" id="7160dc86-bb95-4151-90fb-3bf3ef863de3" name="Default Changelist" comment="Add an autogenerator for alphabet using unicode and Character.toChars(...)[0]&#10;Ugrade cesarCode to Convert UpperCase, still dont keep non alphabet characters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CustomMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1lWiwDpLvKDPr2WGX8MYUFPEUTk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -102,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607724197487</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add an autogenerator for alphabet using unicode and Character.toChars(...)[0]&#10;Ugrade cesarCode to Convert UpperCase, still dont keep non alphabet characters">
+      <created>1617295996392</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617295996392</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,13 +115,18 @@
         <entry key="1">
           <value>
             <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
               <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -141,7 +150,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -162,28 +171,58 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="Add an autogenerator for alphabet using unicode and Character.toChars(...)[0]&#10;Ugrade cesarCode to Convert UpperCase, still dont keep non alphabet characters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add an autogenerator for alphabet using unicode and Character.toChars(...)[0]&#10;Ugrade cesarCode to Convert UpperCase, still dont keep non alphabet characters" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="933" height="281" key="GridCell.Tab.0.bottom" timestamp="1617295845447">
+    <state width="933" height="281" key="GridCell.Tab.0.bottom" timestamp="1617296468344">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="933" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1613779729927" />
-    <state width="933" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617295845447" />
-    <state width="933" height="281" key="GridCell.Tab.0.center" timestamp="1617295845447">
+    <state width="933" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617296468344" />
+    <state width="933" height="281" key="GridCell.Tab.0.center" timestamp="1617296468344">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="933" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1613779729927" />
-    <state width="933" height="281" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617295845447" />
-    <state width="933" height="281" key="GridCell.Tab.0.left" timestamp="1617295845447">
+    <state width="933" height="281" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617296468344" />
+    <state width="933" height="281" key="GridCell.Tab.0.left" timestamp="1617296468343">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="933" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1613779729927" />
-    <state width="933" height="281" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617295845447" />
-    <state width="933" height="281" key="GridCell.Tab.0.right" timestamp="1617295845447">
+    <state width="933" height="281" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617296468343" />
+    <state width="933" height="281" key="GridCell.Tab.0.right" timestamp="1617296468344">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="933" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1613779729927" />
-    <state width="933" height="281" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617295845447" />
+    <state width="933" height="281" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617296468344" />
+    <state x="502" y="247" key="MultipleFileMergeDialog" timestamp="1617296061502">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="502" y="247" key="MultipleFileMergeDialog/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617296061502" />
+    <state x="452" y="208" key="Vcs.Push.Dialog.v2" timestamp="1617296170214">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="452" y="208" key="Vcs.Push.Dialog.v2/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617296170214" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CustomMethod.java</url>
+          <line>264</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CustomMethod.java</url>
+          <line>274</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CustomMethod.java</url>
+          <line>262</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

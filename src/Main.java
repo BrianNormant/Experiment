@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Chaine de caractère a convertir");
-        String s = scanner.next();
+        String s = scanner.nextLine();
         System.out.println(CustomMethod.cesarCode(s,3));
     }
 }
