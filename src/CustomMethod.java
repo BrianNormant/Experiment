@@ -4,11 +4,22 @@ import java.util.Random;
 
 public class CustomMethod {
     public static final int[] fibonaci;
-    public static final String consonnes = "bcdfghjklmnpqrstvwxz";
+    public static final String consonnes;
     public static final String voyelles = "aeiouy";
-    public static final String alphabet = consonnes + voyelles;
-    static final char[] alphabetChar = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-
+    public static final String alphabet;
+    public static final char[] alphabetChar = new char[26];
+    static {
+        for (int i = 0; i < alphabetChar.length; i++) {
+            alphabetChar[i] = Character.toChars(i+97)[0];
+        }
+        String s = "", s2 = "";
+        for (char c : alphabetChar) {
+            s += c;
+            if (!voyelles.contains(String.valueOf(c))) s2 += c;
+        }
+        alphabet = s;
+        consonnes = s2;
+    }
     static {
         fibonaci = new int[47];// max lengh before i > Integer.MAXSIZE
         fibonaci[0] = 0;
@@ -246,19 +257,20 @@ public class CustomMethod {
      * @param offset the parameter of the script
      * @return the scripted String
      */
-    public static String caesarCode(String original, int offset) {
-        StringBuilder crypto = new StringBuilder();
-        for (int i = 0; i < original.length(); i++) {
-            char c = original.charAt(i);
-            for (char value : alphabetChar) {
-                if (c == value) {
-                    c = alphabetChar[(Character.hashCode(c) - 97 + offset) % 26];
-                    break;
-                }
-            }
-            crypto.append(c);
+    public static String cesarCode(String original, int offset) {
+        StringBuilder script = new StringBuilder();
+        boolean[] wasUpperCase = new boolean[original.length()];
+        for (int i = 0; i < original.length(); i++) if (Character.isUpperCase(original.charAt(i))) wasUpperCase[i] = true;
+        original = original.toLowerCase();
+        for (char c : original.toCharArray()) for (int i = 0; i < alphabetChar.length; i++) {
+            if (c == alphabetChar[i]) script.append(Character.toChars((i + offset) % 26 + 97)[0]);
+            if (c == alphabetChar[i]) System.out.println((i+offset)%26+97);
         }
-        return crypto.toString();
+        for (int i = 0; i < original.length(); i++) if (wasUpperCase[i]) {
+            script.insert(i,(String.valueOf(script.charAt(i)).toUpperCase()));
+            script.deleteCharAt(i+1);
+        }
+        return script.toString();
     }
 
     /**
@@ -269,6 +281,24 @@ public class CustomMethod {
      */
     public static int randomInto(int min, int max) {
         return new Random().nextInt(max) + min;
+    }
+
+    /**
+     * A recursive method to print the different stage to resolve a diskNumber disk Hanoi problem
+     * By default, the intermediate tower is named 'B', assuming the firt and last towers are named A and C
+     * @param diskNumber the number of disk
+     * @param or the name of the firt tower
+     * @param dest the name of the last tower
+     */
+    public static void hanoiSolver(int diskNumber,char or, char dest) {
+        if (diskNumber == 1) {
+            System.out.println("Move the top disc from tower "+or+" to tower "+dest);
+            return;
+        }
+        diskNumber--;
+        hanoiSolver(diskNumber,'A','B');
+        System.out.println("Move the top disc from tower "+or+" to tower "+dest);
+        hanoiSolver(diskNumber,'B','C');
     }
 
 }
