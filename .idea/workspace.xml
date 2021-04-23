@@ -19,16 +19,20 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7160dc86-bb95-4151-90fb-3bf3ef863de3" name="Default Changelist" comment="Add an autogenerator for alphabet using unicode and Character.toChars(...)[0]&#10;Ugrade cesarCode to Convert UpperCase, still dont keep non alphabet characters">
+    <list default="true" id="7160dc86-bb95-4151-90fb-3bf3ef863de3" name="Default Changelist" comment="Ugrade cesarCode(String, int) to keep special character">
+      <change afterPath="$PROJECT_DIR$/src/dataStruct/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStruct/KeyCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStruct/Pile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStruct/ResizableList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +42,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -67,7 +72,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="TrashTest" />
@@ -75,8 +80,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test" />
+      <module name="TrashTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -106,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617295996392</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ugrade cesarCode(String, int) to keep special character">
+      <created>1617296796046</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617296796046</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,7 +176,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -172,57 +198,65 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="First Commit" />
     <MESSAGE value="Add an autogenerator for alphabet using unicode and Character.toChars(...)[0]&#10;Ugrade cesarCode to Convert UpperCase, still dont keep non alphabet characters" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add an autogenerator for alphabet using unicode and Character.toChars(...)[0]&#10;Ugrade cesarCode to Convert UpperCase, still dont keep non alphabet characters" />
+    <MESSAGE value="Ugrade cesarCode(String, int) to keep special character" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ugrade cesarCode(String, int) to keep special character" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="933" height="281" key="GridCell.Tab.0.bottom" timestamp="1617296468344">
+    <state x="718" y="187" key="#com.intellij.ide.util.MemberChooser" timestamp="1618411461055">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="718" y="187" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1618411461055" />
+    <state width="1867" height="348" key="GridCell.Tab.0.bottom" timestamp="1618416052882">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="933" height="281" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1613779729927" />
-    <state width="933" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617296468344" />
-    <state width="933" height="281" key="GridCell.Tab.0.center" timestamp="1617296468344">
+    <state width="1867" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1618416052882" />
+    <state width="933" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617414454097" />
+    <state width="1867" height="348" key="GridCell.Tab.0.center" timestamp="1618416052882">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="933" height="281" key="GridCell.Tab.0.center/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1613779729927" />
-    <state width="933" height="281" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617296468344" />
-    <state width="933" height="281" key="GridCell.Tab.0.left" timestamp="1617296468343">
+    <state width="1867" height="348" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1618416052882" />
+    <state width="933" height="348" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617414454097" />
+    <state width="1867" height="348" key="GridCell.Tab.0.left" timestamp="1618416052882">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="933" height="281" key="GridCell.Tab.0.left/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1613779729927" />
-    <state width="933" height="281" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617296468343" />
-    <state width="933" height="281" key="GridCell.Tab.0.right" timestamp="1617296468344">
+    <state width="1867" height="348" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1618416052882" />
+    <state width="933" height="348" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617414454097" />
+    <state width="1867" height="348" key="GridCell.Tab.0.right" timestamp="1618416052882">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="933" height="281" key="GridCell.Tab.0.right/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1613779729927" />
-    <state width="933" height="281" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617296468344" />
+    <state width="1867" height="348" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1618416052882" />
+    <state width="933" height="348" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617414454097" />
+    <state width="1867" height="348" key="GridCell.Tab.1.bottom" timestamp="1618416052882">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1867" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1618416052882" />
+    <state width="933" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617414454097" />
+    <state width="1867" height="348" key="GridCell.Tab.1.center" timestamp="1618416052882">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1867" height="348" key="GridCell.Tab.1.center/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1618416052882" />
+    <state width="933" height="348" key="GridCell.Tab.1.center/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617414454097" />
+    <state width="1867" height="348" key="GridCell.Tab.1.left" timestamp="1618416052882">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1867" height="348" key="GridCell.Tab.1.left/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1618416052882" />
+    <state width="933" height="348" key="GridCell.Tab.1.left/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617414454097" />
+    <state width="1867" height="348" key="GridCell.Tab.1.right" timestamp="1618416052882">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1867" height="348" key="GridCell.Tab.1.right/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1618416052882" />
+    <state width="933" height="348" key="GridCell.Tab.1.right/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617414454097" />
     <state x="502" y="247" key="MultipleFileMergeDialog" timestamp="1617296061502">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="502" y="247" key="MultipleFileMergeDialog/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617296061502" />
-    <state x="452" y="208" key="Vcs.Push.Dialog.v2" timestamp="1617296170214">
+    <state x="452" y="208" key="Vcs.Push.Dialog.v2" timestamp="1617296807480">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="452" y="208" key="Vcs.Push.Dialog.v2/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617296170214" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/CustomMethod.java</url>
-          <line>264</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/CustomMethod.java</url>
-          <line>274</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/CustomMethod.java</url>
-          <line>262</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="452" y="208" key="Vcs.Push.Dialog.v2/0.0.1920.1080/-1920.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617296807480" />
   </component>
 </project>
