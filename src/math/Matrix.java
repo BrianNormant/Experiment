@@ -192,7 +192,6 @@ public class Matrix<T> {
         }
         return equal;
     }
-
     /**
      * @return A string representation of the matrix
      */

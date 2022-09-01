@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand />
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7160dc86-bb95-4151-90fb-3bf3ef863de3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/math/EquationSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Matrix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +31,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1lWiwDpLvKDPr2WGX8MYUFPEUTk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -42,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/Librairie/imageDecoder/pngdecoder-1.0.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -94,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614312819555</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Corriger un bug dans le Grapher.java">
+      <created>1614315847377</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614315847377</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,94 +165,14 @@
         <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="First Commit" />
     <MESSAGE value="Ajout d'une description et d'autre methodes" />
     <MESSAGE value="Ajout d'un dessinateur de fonction et de deux methode de sommation de Riemann" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'un dessinateur de fonction et de deux methode de sommation de Riemann" />
+    <MESSAGE value="Corriger un bug dans le Grapher.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corriger un bug dans le Grapher.java" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="801" y="376" key="#Notifications" timestamp="1607724218923">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="801" y="376" key="#Notifications/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1607724218923" />
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1611685459380">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1611685459380" />
-    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1614312816802">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1614312816802" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1611755174300">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1611755174300" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1611755174300">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1611755174300" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1611755174300">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1611755174300" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1611755174300">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1611755174300" />
-    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1611755174292">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1611755174292" />
-    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1611755174292">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1611755174292" />
-    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1611755174292">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1611755174292" />
-    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1611755174292">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1611755174292" />
-    <state x="277" y="77" key="SettingsEditor" timestamp="1611686406530">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="277" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1611686406530" />
-    <state x="362" y="166" key="Vcs.Push.Dialog.v2" timestamp="1614312822720">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="452" y="208" key="Vcs.Push.Dialog.v2/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1607724694228" />
-    <state x="362" y="166" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1614312822720" />
-    <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1607863956915">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1607863956915" />
-    <state x="556" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614310389693">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="695" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1607863698264" />
-    <state x="556" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1614310389693" />
-    <state x="587" y="285" key="git4idea.merge.GitMergeDialog" timestamp="1607724472985">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="587" y="285" key="git4idea.merge.GitMergeDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1607724472985" />
-    <state x="623" y="375" key="git4idea.rebase.GitRebaseDialog" timestamp="1607724396773">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="623" y="375" key="git4idea.rebase.GitRebaseDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1607724396773" />
-    <state x="714" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1607724161989">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="714" y="426" key="git4idea.remote.GitConfigureRemotesDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1607724161989" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1611753827300">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1611753827300" />
   </component>
 </project>
