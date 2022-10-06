@@ -1,5 +1,7 @@
 package math;
 
+import java.util.Arrays;
+
 public class Matrix<T> {
     //Properties
     private final Object[][] array;
@@ -10,9 +12,9 @@ public class Matrix<T> {
     }
 
     /**
-     * Create a empty matrix sized by x and y
+     * Create an empty matrix sized by x and y
      * @param xSize number of line
-     * @param ySize number of column per line
+     * @param ySize number of column
      */
     public Matrix(int xSize, int ySize) {
         this.array = new Object[xSize][ySize];
@@ -20,7 +22,7 @@ public class Matrix<T> {
 
     /**
      * Create a Matrix sized by x and y
-     * this Matrix is full of defaultValue
+     * this Matrix will be filled by defaultValue
      * @param xSize number of line
      * @param ySize number of column per line
      * @param defaultValue value to fill the matrix
@@ -102,7 +104,7 @@ public class Matrix<T> {
     }
 
     /**
-     * add every element of the two matrix in a new matrix
+     * Add every element of the two matrix in a new matrix
      * <ul>
      *     <li>The two matrix shall have the same dimension</li>
      *     <li>Type of the matrix shall be <ul>
@@ -115,7 +117,7 @@ public class Matrix<T> {
      *     <li>Use the toString() methods of T</li>
      * </ul>
      * @param matrix a matrix with the same type
-     * @return a new Matrix<Double> with the result of the addition
+     * @return a new Matrix<Number> with the result of the addition
      */
     public Matrix<Number> add(Matrix<T> matrix) {
         Matrix<Number> result = new Matrix<>(this.getXSize(), this.getYSize());
@@ -131,7 +133,7 @@ public class Matrix<T> {
     }
 
     /**
-     * mul every element of the two matrix in a new matrix
+     * multiply every element of the two matrix in a new matrix
      * <ul>
      *     <li>A, B are Matrix, A.getYSize shall be equal to B.getXSize</li>
      *     <li>Type of the matrix shall be <ul>
@@ -146,22 +148,37 @@ public class Matrix<T> {
      * @param matrix a matrix with the same type
      * @return a new Matrix<Double> with the result of the multiplication
      */
-    public Matrix<Number> mul(Matrix<T> matrix) {
-        Matrix<Number> result = new Matrix<>(this.getXSize(),matrix.getYSize());
+    public Matrix<Integer> mul(Matrix<Integer> matrix) {
+        if (this.getYSize() != matrix.getXSize()) throw new IllegalArgumentException("AxB, A number of column must be equal to B number of line\n"+
+                "Currently A is " + this.getXSize() + "x" + this.getYSize() + " and B is "+
+                matrix.getXSize() + "x" + matrix.getYSize()
+        );
+        Matrix<Integer> result = new Matrix<>(this.getXSize(),matrix.getYSize());
         for (int i = 0; i < this.getXSize(); i++) {
-            for (int j = 0; j < this.getYSize(); j++) {
-                double element = 0;
+            for (int j = 0; j < matrix.getYSize(); j++) {
+                int element = 0;
                 //On multiplie dans l'ordre, élément par élément, chaque élément d'une ligne de la première matrice
                 //A par chaque élément d'une colonne de la deuxième matrice B
                 for (int k = 0; k < this.getYSize(); k++) {
-                    element +=  Double.parseDouble(this.getElement(i,k).toString())*
-                                Double.parseDouble(matrix.getElement(k,j).toString());
+                    element +=
+                            (Integer) this.getElement(i,k)
+                            * matrix.getElement(k,j);
 
                 }
-                result.setElement(i,j,element);
+                result.setElement(i,j, element);
             }
         }
         return result;
+    }
+
+    public Matrix<T> transpose() {
+        Matrix<T> transposed = new Matrix<>(this.getYSize(), this.getXSize());
+        for (int i = 0; i < this.getXSize(); i++) {
+            for (int j = 0; j < this.getYSize(); j++) {
+                transposed.setElement(j,i, this.getElement(i,j));
+            }
+        }
+        return transposed;
     }
 
     //Override object methods
@@ -192,24 +209,49 @@ public class Matrix<T> {
         }
         return equal;
     }
+
+    public static Matrix<Integer> createDefineIntegerMatrix(int x, int y, Integer[][] numbers) {
+        Matrix<Integer> m = new Matrix<>(x,y);
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < y; j++) {
+                m.setElement(i, j, numbers[i][j]);
+            }
+        }
+        return  m;
+    }
+
+    public Integer[][] getMatrixAsArray() {
+        Integer[][] result = new Integer[this.getXSize()][this.getYSize()];
+        for (int i = 0; i < result.length; i++)
+            for (int j = 0; j < result[i].length; j++)
+                result[i][j] = (Integer) this.getElement(i,j);
+        return result;
+    }
+    public static Matrix<Integer> convertNumberMatrixToIntegerMatrix(Matrix<Number> numMat) {
+        Matrix<Integer> integerMat = new Matrix<>(numMat.getXSize(), numMat.getYSize());
+        for (int i = 0; i < numMat.getXSize(); i++) {
+            for (int j = 0; j < numMat.getYSize(); j++) {
+                integerMat.setElement(i,j, (Integer)numMat.getElement(i,j));
+            }
+        }
+        return integerMat;
+    }
+    public static Matrix<Double> convertNumberMatrixToDoubleMatrix(Matrix<Number> numMat) {
+        Matrix<Double> integerMat = new Matrix<>(numMat.getXSize(), numMat.getYSize());
+        for (int i = 0; i < numMat.getXSize(); i++) {
+            for (int j = 0; j < numMat.getYSize(); j++) {
+                integerMat.setElement(i,j, (Double)numMat.getElement(i,j));
+            }
+        }
+        return integerMat;
+    }
     /**
      * @return A string representation of the matrix
      */
     @Override
     public String toString() {
-        String s = "Matrix{array=[";
-        for (int i = 0; i < this.getXSize(); i++) {
-            s += "[";
-            for (int j = 0; j < this.getYSize(); j++) {
-                s += this.getElement(i,j).toString();
-                if (j == this.getYSize()-1) {
-                    s += "]";
-                } else s += ", ";
-            }
-            if (i == this.getXSize()-1) {
-                s += "]";
-            } else s += ", ";
-        }
-        return s+'}';
+        return "Matrix{" +
+                "array=" + Arrays.deepToString(array) +
+                '}';
     }
 }

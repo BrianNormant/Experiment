@@ -81,18 +81,18 @@ public class Vector<T> {
         System.out.print("\n");
     }
 
-    /**
-     * add every element of the two vector into a new Vector
+    /** Add every element of the two vector into a new Vector
      * <ul>
      *     <li>The two vector shall have the same size</li>
-     *     <li>Type of the vector shall be <ul>
+     *     <li>Type of the vector shall be
      *         <li>Long</li>
      *         <li>Integer</li>
      *         <li>Short</li>
      *         <li>Double</li>
      *         <li>Float</li>
-     *     </ul></li>
+     *     </li>
      *     <li>Use the toString() methods of T</li>
+     * </ul>
      * @param vector a vector<T>
      * @return a new Vector<Double> with the result of the two Vector addition
      */

@@ -1,30 +1,14 @@
 import math.Matrix;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.Objects;
 
-public class HammingCode {
-    private static int nbErrors = 0;
-    public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(
-                new InputStreamReader(System.in));
-
-        // Reading data using readLine
-        System.out.println("Nom?");
-        String name = reader.readLine();
-        System.out.println(utility.ArrayUtility.doubleArrayToReturnString((
-                utility.WrapperConverter.intArrayToInteger(encode(name))
-        )));
-
-        System.out.println("Coller le binaire ici (pur texte)");
-        String s = reader.readLine();
-        final String sVerif = s;
-        s = s.replace(" ", "");
-        s = s.replace("\n", "");
-
+public class main {
+    public static void main(String[] args) {
+        String s = "10011001010101110011011111111100110001011001010100000000110011010000111100110111111100011110100101000111101010100001111100001101010100000000110011010011001100110010010101010100000000110011010101011100110110100100011111001100110011011100000010110001100111001101010101110011011010010001111100110011001100011001000111111010010001111010010111001100100101000111110000110101010000000011001100100101000111110000110001111100110001010100000000110011001001010001111111000000011111001100000111101010101100110110100111001101111111000111101010101100110100110011001100011001110011000101101100110110100111001100011001000111101010101100110010010101010100010110";
+        //        "0010100" +
+        //            "1110001" +
+        //            "0010010"+
+        //            "1111110";
         int[][] test = new int[s.length()/7][7];
         {
             int i = 0;
@@ -39,40 +23,14 @@ public class HammingCode {
                 i++;
             }
         }
-        if (test.length * test[0].length != sVerif.length()) throw new IllegalArgumentException("Il faut fournir un nombre entier de paquet de 7 bit");
-        System.out.println(Arrays.deepToString(test));
-        System.out.println("Le texte est :\n" + decode(test));
-        System.out.println("Il y avait "+ nbErrors +" erreur"+((nbErrors>1)?"s":"" )+" dans le texte");
-    }
 
-    public static final Matrix<Integer> MAT_ENCODING = Matrix.createDefineIntegerMatrix(4,7,
-            new Integer[][] {
-                    {1,1,1,0,0,0,0}, //0
-                    {1,0,0,1,1,0,0}, //1
-                    {0,1,0,1,0,1,0}, //2
-                    {1,1,0,1,0,0,1}  //3
+        for (int[] line : test) {
+            for (int bit : line) {
+                System.out.print(bit + "");
             }
-            );
-    public static final Matrix<Integer> MAT_CONTROL = Matrix.createDefineIntegerMatrix(3,7,
-            new Integer[][] {
-                    {0,0,0,1,1,1,1},
-                    {0,1,1,0,0,1,1},
-                    {1,0,1,0,1,0,1}
-            }
-    );
-    public static final Matrix<Integer> MAT_DECODING = Matrix.createDefineIntegerMatrix(7,4,
-            new Integer[][] {
-                    {0,0,0,0}, //0
-                    {0,0,0,0}, //1
-                    {1,0,0,0},  //2
-                    {0,0,0,0},  //3
-                    {0,1,0,0},  //4
-                    {0,0,1,0},  //5
-                    {0,0,0,1}   //6
-            }
-    );
+            System.out.println();
+        }
 
-    private static String decode(int[][] test) {
         int[][] rawMessage = new int[test.length][4];
         for (int i = 0; i < test.length; i++) {
             // Convert from int[7][1] to Matrix<Integer>[7,1]
@@ -84,6 +42,10 @@ public class HammingCode {
             String vecErrString = "";
             for (int x = 0; x < errorVec.getXSize(); x++)
                 for (int y = 0; y < errorVec.getYSize(); y++) {
+                    if (errorVec.getElement(x, y) == null) {
+                        errorVec.setElement(x, y, -1);
+                        continue;
+                    }
                     if (!errorVec.getElement(x, y).equals(0) && !errorVec.getElement(x, y).equals(1)) {
                         errorVec.setElement(x, y, (errorVec.getElement(x, y) % 2 == 0) ? 0 : 1);
                     }
@@ -93,7 +55,6 @@ public class HammingCode {
             if (errorIndex != 0) {
                 errorIndex --; //the index need to go to 0,1,2 from 1,2,3
                 //Correct the error bit "flipping" the int
-                nbErrors++;
                 sevenBits.setElement(0,errorIndex, (Objects.equals(sevenBits.getElement(0, errorIndex), 0))?1:0);
             }
             //Convert from Matrix<Integer>[7,1] to Matrix<Integer>[4,1] then to int[4][1]
@@ -113,16 +74,14 @@ public class HammingCode {
             for (int j = 0; j < rawMessage[i].length; j++) byteString += rawMessage[i+1][j];
             binaryString += byteString;
         }
-        return utility.ASCII.binaryToString(binaryString);
-    }
-    private static int[][] encode(String message) {
-        Integer[][] rawMessage = utility.WrapperConverter.intArrayToInteger(utility.ASCII.stringToBinary(message));
-        var encodedMessage = new int[rawMessage.length][7];
-        for (int i = 0; i < encodedMessage.length; i++) {
-            var lineMessage = Matrix.createDefineIntegerMatrix(1,4,new Integer[][]{rawMessage[i]});
-            var lineEncodedMessage = lineMessage.mul(MAT_ENCODING);
-            encodedMessage[i] = utility.WrapperConverter.integerArrayToInt(lineEncodedMessage.getMatrixAsArray()[0]);
+
+        String result = "Error";
+        System.out.println("Raw Data:");
+        for (int[] line: rawMessage) for (int ints: line) {
+            System.out.print(ints);
         }
-        return encodedMessage;
+        System.out.println("\nEnd of RawData");
+        result = utility.ASCII.binaryToString(binaryString);
+        System.out.println("Le message est :\n"+result);
     }
 }

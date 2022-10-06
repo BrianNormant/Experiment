@@ -8,11 +8,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7160dc86-bb95-4151-90fb-3bf3ef863de3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/math/EquationSystem.java" afterDir="false" />
+    <list default="true" id="7160dc86-bb95-4151-90fb-3bf3ef863de3" name="Default Changelist" comment="            Create and development of SystemSolver class">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Animation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utility/ASCII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utility/ArrayUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utility/WrapperConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HammingCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HammingCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/math/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Vector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +36,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -43,20 +49,32 @@
     <option name="showLibraryContents" value="true" />
     <option name="sortByType" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Librairie/imageDecoder/pngdecoder-1.0.jar!/" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RunManager">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.HammingCode">
+    <configuration name="Animation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Animation" />
+      <module name="TrashTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HammingCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HammingCode" />
+      <module name="TrashTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="TrashTest" />
@@ -64,8 +82,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="TrashTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HammingCode" />
+        <item itemvalue="Application.Animation" />
+        <item itemvalue="Application.main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -110,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614315847377</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Create and development of SystemSolver class">
+      <created>1662069274242</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662069274242</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,7 +207,27 @@
     <MESSAGE value="Ajout d'une description et d'autre methodes" />
     <MESSAGE value="Ajout d'un dessinateur de fonction et de deux methode de sommation de Riemann" />
     <MESSAGE value="Corriger un bug dans le Grapher.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corriger un bug dans le Grapher.java" />
+    <MESSAGE value="Create and development of SystemSolver class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create and development of SystemSolver class" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/utility/ASCII.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
